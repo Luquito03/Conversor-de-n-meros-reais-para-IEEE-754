@@ -1,4 +1,4 @@
-#Real para binário
+#--------------------------------Real para binário--------------------------
 
 def intby(m):
     
@@ -72,7 +72,7 @@ def bi(m):
 
     return c
 
-#Real para binário 64 bits
+#-------------------------------Real para binário 64 bits-------------------------------
 
 def decby64(m): 
       
@@ -123,7 +123,7 @@ def bi64(m):
 
     return c
 
-#Binário para hexa
+#----------------------------------------Binário para hexa-------------------------
 
 def hexa (m):
     num = int(m, 2)
@@ -133,7 +133,7 @@ def hexa (m):
     return hex_num
 
 
-
+#------------------------------------Expoente do bias---------------------------------
 def expbia (m):
     num = float(m)
 
@@ -143,6 +143,8 @@ def expbia (m):
 
     return exp_num
 
+#------------------------------------Normaização de mantissa--------------------------------
+
 def norm_mant (m):
     num = int(m)
 
@@ -151,7 +153,7 @@ def norm_mant (m):
     
     return (mant)
         
-
+#---------------------------------------------Bias em binario----------------------------
 def biatriz(m):
 
     a = str()
@@ -168,7 +170,7 @@ def biatriz(m):
     bi = a[::-1]
     return bi
 
-
+#---------------------------------------------Bias em binario 64 bits----------------------------
 def biatriz64(m):
 
     a = str()
@@ -190,7 +192,7 @@ print('Integrantes:\n' 'Lucas Bernardino dos Santos\n''Alan Soares Lima\n''Icaro
 n =  float(input('Dado de entrada: '))
 print('Resultado\n')
 
-#Para positivos
+#------------------------------------------------Para positivos---------------------------------------------------------
 
 if n > 0:
     print('Padrão IEEE-754 de 32 bits')
@@ -252,7 +254,7 @@ if n > 0:
         total64 = total64[:j] + ' ' + total64[j:]
     print('Binário = {}\n'.format(total64))
 
-#Para negativos    
+#-----------------------------------------------------------Para negativos-------------------------------------------    
 
 else:
     print('Padrão IEEE-754 de 32 bits')
@@ -286,7 +288,7 @@ else:
     print('Binário = {}\n'.format(total))
 
 
-
+#-----------------------------------------64 bits---------------------------------------------------
 
     print('Padrão IEEE-754 de 64 bits')
     print('Sinal = Positivo -> 1')
